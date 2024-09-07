@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Education Virtual Conference</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">SikshaHub Virtual Conference</div>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="assessment.html">Assessement</a>
+        <a href="books.html">Books</a>
+        <a href="contact.html">Contact</a>
+        <a href="signin.html" class="cta-button">Register Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Virtual Conference Section -->
+  <section class="conference-section">
+    <div class="container">
+      <h2>Welcome to the Smart Education Virtual Conference</h2>
+      <p>Join us for an exciting day of learning and networking with experts in the education industry. Check out the schedule below and register for sessions that interest you!</p>
+
+      <!-- Conference Schedule -->
+      <div class="conference-schedule">
+        <h3>Conference Schedule</h3>
+        <div class="schedule-item">
+          <h4>Keynote Session: The Future of Personalized Learning</h4>
+          <p><strong>Time:</strong> 10:00 AM - 11:00 AM (GMT)</p>
+          <p><strong>Speaker:</strong> Dr. John Smith</p>
+        </div>
+        <div class="schedule-item">
+          <h4>Workshop: AI in Education</h4>
+          <p><strong>Time:</strong> 11:30 AM - 12:30 PM (GMT)</p>
+          <p><strong>Speaker:</strong> Dr. Jane Doe</p>
+        </div>
+        <div class="schedule-item">
+          <h4>Panel Discussion: Skills of Tomorrow</h4>
+          <p><strong>Time:</strong> 2:00 PM - 3:00 PM (GMT)</p>
+          <p><strong>Panelists:</strong> Various Industry Leaders</p>
+        </div>
+      </div>
+
+      <!-- Registration Form -->
+      <div class="registration-form">
+        <h3>Register for the Conference</h3>
+        <form id="conference-form" onsubmit="registerForConference(event)">
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+          <select id="session" name="session" required>
+            <option value="" disabled selected>Select a Session</option>
+            <option value="keynote">Keynote Session: The Future of Personalized Learning</option>
+            <option value="workshop">Workshop: AI in Education</option>
+            <option value="panel">Panel Discussion: Skills of Tomorrow</option>
+          </select>
+          <button type="submit" class="primary-btn">Register Now</button>
+        </form>
+        <div id="registration-result" class="registration-result"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 SikshaHub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Include JavaScript file -->
+  <script src="scripts.js"></script>
+</body>
+</html>

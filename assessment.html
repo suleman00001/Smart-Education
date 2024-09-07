@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Education Assessement</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Quiz Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">SikshaHub Assessement</div>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="books.html">Books</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Quiz Section -->
+  <section class="quiz-section">
+    <div class="container">
+      <h2>Smart Assessement: Find Your Perfect Course!</h2>
+      <form id="quiz-form" onsubmit="calculateScore(event)">
+        
+        <!-- Question 1 -->
+        <div class="quiz-question">
+          <h3>1. What type of learner are you?</h3>
+          <label><input type="radio" name="q1" value="a"> Visual</label><br>
+          <label><input type="radio" name="q1" value="b"> Auditory</label><br>
+          <label><input type="radio" name="q1" value="c"> Kinesthetic</label><br>
+          <label><input type="radio" name="q1" value="d"> Reading/Writing</label>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="quiz-question">
+          <h3>2. Which subject do you enjoy the most?</h3>
+          <label><input type="radio" name="q2" value="a"> Math</label><br>
+          <label><input type="radio" name="q2" value="b"> Science</label><br>
+          <label><input type="radio" name="q2" value="c"> History</label><br>
+          <label><input type="radio" name="q2" value="d"> Art</label>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="quiz-question">
+          <h3>3. What is your preferred learning style?</h3>
+          <label><input type="radio" name="q3" value="a"> Online Courses</label><br>
+          <label><input type="radio" name="q3" value="b"> Group Study</label><br>
+          <label><input type="radio" name="q3" value="c"> Hands-On Experience</label><br>
+          <label><input type="radio" name="q3" value="d"> Reading Textbooks</label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="primary-btn">Submit Assessement</button>
+      </form>
+
+      <!-- Result Display -->
+      <div id="quiz-result" class="quiz-result">
+        <!-- Quiz result will be displayed here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 SikshaHub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Include JavaScript file -->
+  <script src="scripts.js"></script>
+</body>
+</html>
